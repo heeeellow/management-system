@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginD</class>
+ <widget class="QDialog" name="LoginD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="my_system.qrc">
+    <normaloff>:/my_system/Resource/ico.png</normaloff>:/my_system/Resource/ico.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#LoginD{
+	border-image: url(:/my_system/Resource/1.png);
+}
+
+QTabBar::tab {
+    min-width: 100px;
+    color: white;
+    background: transparent;
+	font: 700 20pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QTabBar {
+ alignment: center; /* 标签居中 */
+ }
+
+QTabBar::tab:selected {
+   
+	color: rgb(255, 255, 255);
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.772222 rgba(21, 201, 255, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+}
+QTabBar::tab:!selected:hover {
+  
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+}
+
+
+
+
+
+ 
+
+
+
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>456</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: 2px solid #C0C0C0; /* 边框 */
+    padding: 5px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    color: #000000; /* 文本颜色 */
+    selection-background-color: #ADD8E6; /* 选中文本背景色 */
+    selection-color: #000000; /* 选中文本颜色 */
+	font: 14pt &quot;Microsoft YaHei UI&quot;;
+    min-width: 100px; /* 最小宽度 */
+    max-width: 300px; /* 最大宽度 */
+}
+
+
+
+QLabel{
+	
+	color: rgb(0, 0, 0);
+	
+	font: 700 16pt &quot;Microsoft YaHei UI&quot;;
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <property name="documentMode">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>登录</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMaximumSize</enum>
+         </property>
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="lineEdit_id">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/my_system/Resource/ID.png);
+padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: left;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei UI</family>
+             <pointsize>16</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;工号:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>用户名:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="pushButton_login">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+   /*文字颜色*/
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 222, 85);
+    font:bold 14px; /*字体*/
+	font: 700 16pt &quot;Microsoft YaHei UI&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:30px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+/*如果按下与悬浮想同时产生效果，hover必须写在pressed的后面*/
+/*鼠标按下时的效果*/
+QPushButton:pressed
+{
+    
+	color: rgb(0, 0, 0);
+     /*改变背景色*/
+	background-color: rgb(105, 207, 68);
+    border-style:inset;/*改变边框风格*/
+    padding-left:6px;
+    padding-top:6px;
+}
+ 
+ /*鼠标悬浮时的效果*/
+QPushButton:hover
+{
+	background-color: rgb(69, 199, 255);
+   border-style:inset;/*改变边框风格*/
+}
+
+ 
+ 
+
+</string>
+           </property>
+           <property name="text">
+            <string>登录</string>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="3">
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="lineEdit_pwd">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/my_system/Resource/pwd.png);
+padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: left;</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="3">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEdit_name">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/my_system/Resource/user.png);
+padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: left;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>密码：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="pushButton_exit">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+   /*文字颜色*/
+	color: rgb(255, 255, 255);
+	background-color: rgb(159, 159, 159);
+    font:bold 14px; /*字体*/
+	font: 700 16pt &quot;Microsoft YaHei UI&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:30px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+/*如果按下与悬浮想同时产生效果，hover必须写在pressed的后面*/
+/*鼠标按下时的效果*/
+QPushButton:pressed
+{
+    
+	color: rgb(0, 0, 0);
+     /*改变背景色*/
+	background-color: rgb(105, 207, 68);
+    border-style:inset;/*改变边框风格*/
+    padding-left:6px;
+    padding-top:6px;
+}
+ 
+ /*鼠标悬浮时的效果*/
+QPushButton:hover
+{
+	background-color: rgb(255, 80, 83);
+   border-style:inset;/*改变边框风格*/
+}
+
+ 
+ </string>
+           </property>
+           <property name="text">
+            <string>退出</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>数据库配置</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>数据库名:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="3">
+          <widget class="QLineEdit" name="lineEdit_datapwd">
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="lineEdit_port">
+           <property name="text">
+            <string>3306</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>端口:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>主机:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>用户名:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="lineEdit_databasename">
+           <property name="text">
+            <string>management</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="lineEdit_datauser">
+           <property name="text">
+            <string>root</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLabel" name="label_8">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.701657 rgba(0, 170, 255, 87), stop:0.922652 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="text">
+            <string>密码:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="lineEdit_hostName"/>
+         </item>
+         <item row="2" column="4">
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_savedata">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+   /*文字颜色*/
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 222, 85);
+    font:bold 14px; /*字体*/
+	font: 700 16pt &quot;Microsoft YaHei UI&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:30px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+/*如果按下与悬浮想同时产生效果，hover必须写在pressed的后面*/
+/*鼠标按下时的效果*/
+QPushButton:pressed
+{
+    
+	color: rgb(0, 0, 0);
+     /*改变背景色*/
+	background-color: rgb(105, 207, 68);
+    border-style:inset;/*改变边框风格*/
+    padding-left:6px;
+    padding-top:6px;
+}
+ 
+ /*鼠标悬浮时的效果*/
+QPushButton:hover
+{
+	background-color: rgb(159, 159, 159);
+   border-style:inset;/*改变边框风格*/
+}
+
+ 
+ 
+
+</string>
+         </property>
+         <property name="text">
+          <string>保存配置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_dataopen">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+   /*文字颜色*/
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 222, 85);
+    font:bold 14px; /*字体*/
+	font: 700 16pt &quot;Microsoft YaHei UI&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:30px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+/*如果按下与悬浮想同时产生效果，hover必须写在pressed的后面*/
+/*鼠标按下时的效果*/
+QPushButton:pressed
+{
+    
+	color: rgb(0, 0, 0);
+     /*改变背景色*/
+	background-color: rgb(105, 207, 68);
+    border-style:inset;/*改变边框风格*/
+    padding-left:6px;
+    padding-top:6px;
+}
+ 
+ /*鼠标悬浮时的效果*/
+QPushButton:hover
+{
+	background-color: rgb(69, 199, 255);
+   border-style:inset;/*改变边框风格*/
+}
+
+ 
+ 
+
+</string>
+         </property>
+         <property name="text">
+          <string>连接</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="my_system.qrc"/>
+ </resources>
+ <connections/>
+</ui>
